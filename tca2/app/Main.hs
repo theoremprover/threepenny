@@ -13,6 +13,7 @@ setup :: Window -> UI ()
 setup w = do
 	return w # set title "Test"
 	button <- UI.button # set UI.text "Button"
-	getBody w #+ [element button]
+	input <- UI.input #. "input"
+	getBody w #+ [element input,element button]
 	on UI.click button $ const $ do
 		element button # set UI.text "CLICKED!"
