@@ -6,7 +6,7 @@ author:              "Author name here"
 maintainer:          "example@example.com"
 copyright:           "2018 Author name here"
 
-extra-source-files:
+extra-source-files: []
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -19,7 +19,7 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-- threepenny-gui
+- threepenny-gui >= 0.9.1.0
 
 executables:
   tca2-exe:
@@ -29,5 +29,3 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    dependencies:
-    - tca2
